@@ -1,0 +1,106 @@
+.modal-container {
+  width: 600px;
+  height: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 5px;
+}
+.model-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #d38566;
+}
+.model-close:hover {
+  background-color: #d38566;
+  color: #fff;
+}
+.modal-login h3 {
+  font-size: 1.25em;
+  margin: 0;
+  color: #d38566;
+}
+.form-login {
+  margin-top: 20px;
+}
+.form-login form label {
+  font-size: 12px;
+  font-weight: 700;
+}
+.form-login form input {
+  display: block;
+}
+.info-user input {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+
+  margin-bottom: 10px;
+}
+.remember {
+  display: flex;
+  margin-bottom: 10px;
+}
+.form-login button {
+  background-color: #d38566;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.support-form {
+  display: flex;
+  justify-content: space-between;
+}
+.forget-password {
+  text-decoration: none;
+  color: #d38566;
+  font-size: 15px;
+  padding: 10px;
+}
+.forget-password:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.user {
+  border: none;
+  background-color: #d38566;
+  color: #fff;
+  margin-bottom: 18px;
+  margin-left: 10px;
+}
+
+.support-form p a {
+  display: flex;
+  justify-content: space-between;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-color: #d38566;
+  width: 100%;
+  text-align: center;
+}
+header img {
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+}

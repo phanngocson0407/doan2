@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #cccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.margin-top20 {
+  margin-top: 20px;
+}
+#container {
+  width: 400px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+}
+.name_form {
+  text-align: center;
+}
+#form_dangki input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #cccc;
+}
+#form_dangki button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #f50c0c;
+  color: #fff;
+  font-weight: 700;
+}
+#rules {
+  font-size: 15px;
+  text-align: center;
+  color: #d9d9d9;
+}
+#rules span a {
+  color: #0f7ce4;
+}

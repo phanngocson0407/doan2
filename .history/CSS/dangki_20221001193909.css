@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: linear-gradient(#ee9ca7, #ffdde1); */
+}
+
+.margin-top20 {
+  margin-top: 20px;
+}
+
+#container {
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name_form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form_dangki input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #cccc;
+}
+#form_dangki button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #f50c0c;
+  color: #fff;
+  font-weight: 700;
+}
+#rules {
+  font-size: 15px;
+  text-align: center;
+}
+#rules span a {
+  color: #0f7ce4;
+}
+header {
+  background-color: #d38566;
+  width: 100%;
+}
+header img {
+  width: 150px;
+}
