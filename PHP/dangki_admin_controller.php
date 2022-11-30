@@ -1,4 +1,5 @@
 <?php
+//jjj
 include_once('connect_database.php');
 if(isset($_REQUEST['ten_admin']) AND !empty($_REQUEST['ten_admin']))
 {
