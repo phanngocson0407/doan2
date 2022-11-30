@@ -1,0 +1,13 @@
+#content {
+  background-color: #f8f8ff;
+  margin: -21px 165px 0;
+  height: 1000px;
+}
+.hello h1 {
+  padding-top: 20px;
+}
+.border {
+  border-top: #d38566 solid 2px;
+  width: 100%;
+  margin: 35px 0;
+}

@@ -1,0 +1,38 @@
+#main {
+  background-color: rgba(209, 189, 189, 0.1);
+}
+.border {
+  border-top: #d38566 solid 2px;
+  width: 100%;
+  margin: 35px 0;
+}
+#content {
+  margin: 0 165px;
+}
+#content h1 {
+  color: #d38566;
+}
+.content_hello h2,
+p {
+  text-align: center;
+}
+.content_hello h2 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.content_hello p {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.content_main p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d38566;
+}
+#content h2 {
+  text-align: center;
+  color: #d38566;
+  letter-spacing: 3px;
+}

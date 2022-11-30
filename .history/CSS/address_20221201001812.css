@@ -1,0 +1,23 @@
+#content {
+  margin: -21px 165px 0;
+  height: 1000px;
+}
+.hello h1 {
+  padding-top: 20px;
+  color: #d38566;
+}
+.hello p {
+  font-weight: 800;
+}
+.border {
+  border-top: #d38566 solid 2px;
+  width: 100%;
+  margin: 35px 0;
+}
+.content_add .add p {
+  font-weight: 700;
+}
+.add p a {
+  text-decoration: none;
+  color: #d38566;
+}

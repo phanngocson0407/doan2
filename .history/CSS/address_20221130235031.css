@@ -1,0 +1,8 @@
+#content {
+  margin: 0 165px;
+}
+footer {
+  position: fixed;
+  top: 100px;
+  bottom: 0px;
+}
