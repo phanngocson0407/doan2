@@ -3,8 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-}
-html {
   scroll-behavior: smooth;
 }
 
@@ -16,7 +14,6 @@ html {
   transition: all 0.2s linear;
 }
 .sticky {
-  position: fixed;
   top: 0;
   left: 0;
   animation: scrollHeader 1s forwards 1;

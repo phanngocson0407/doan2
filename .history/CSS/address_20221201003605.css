@@ -1,0 +1,37 @@
+#main {
+  background-color: rgba(209, 189, 189, 0.1);
+}
+#content {
+  margin: -21px 165px 0;
+  padding: 70px 0;
+}
+.hello h1 {
+  padding-top: 60px;
+  color: #d38566;
+}
+.hello p {
+  font-weight: 800;
+}
+.border {
+  border-top: #d38566 solid 2px;
+  width: 100%;
+  margin: 35px 0;
+}
+.add_first {
+  font-size: 25px;
+  color: #d38566;
+  font-weight: 700;
+  padding: 15px 0;
+}
+.add_first span {
+  color: #000;
+}
+.content_add .add p {
+  font-weight: 700;
+  font-size: 15px;
+}
+.add p a {
+  text-decoration: none;
+  color: #d38566;
+  font-size: 20px;
+}
