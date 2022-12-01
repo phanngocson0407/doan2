@@ -24,7 +24,7 @@ function show_sanpham()
                     <a href="" class="buynow">XEM NHANH</a>
                   </div>
                   <div class="product-info">
-                    <a href="" class="product-name">${item.tensanpham}– ${item.masanpham}</a>
+                    <a href="" class="product-name">${item.tensanpham}-${item.chat_lieu}– ${item.masanpham}</a>
                     <div>
                       <p class="product-price">${item.gia}</p>
                       <a href="" class="product-more">LỰA CHỌN CÁC TÙY CHỌN</a>
