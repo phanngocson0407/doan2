@@ -44,18 +44,27 @@ switch($loaiquanly)
             return_err("Điền chất liệu");
         }
 
+        if(isset($_FILES['hinh_sanpham']))
+        {
+            $link_hinhmoithem=them_hinhanh("hinh_sanpham","images/sanpham/");
+        }
+        else{
+            return_err("Điền hinh_sanpham");
+        }
+
 
         $sql="INSERT INTO san_pham 
             SET 
             masanpham='$masanpham',
             tensanpham='$tensanpham',
             gia='$gia',
-            chat_lieu='$chat_lieu'
+            chat_lieu='$chat_lieu',
+            img_sp='$link_hinhmoithem'
         ";
         $arr=[];
         if(mysqli_query($conn, $sql))
         {
-            return_successs("Cập nhật thành công");
+            return_successs("Them thành công");
         }
         else{
             return_err("Thất bại");
@@ -94,7 +103,6 @@ switch($loaiquanly)
         else{
             return_err("Điền id sản phẩm");
         }
-
         if(isset($_REQUEST['masanpham']) AND !empty($_REQUEST['masanpham']))
         {
             $masanpham=$_REQUEST['masanpham'];
@@ -128,7 +136,8 @@ switch($loaiquanly)
         }
 
         $sql="UPDATE san_pham
-            SET masanpham='$masanpham',
+            SET
+            masanpham='$masanpham',
             tensanpham='$tensanpham',
             gia='$gia',
             chat_lieu='$chat_lieu'
@@ -165,7 +174,8 @@ switch($loaiquanly)
                     "masanpham"=>$row['masanpham'],
                     "tensanpham"=>$row['tensanpham'],
                     "gia"=>$row['gia'],
-                    "chat_lieu"=>$row['chat_lieu']
+                    "chat_lieu"=>$row['chat_lieu'],
+                    "img_sp"=>$row['img_sp']
                 
                 ];
                 $arr[]=$item;

@@ -1,4 +1,28 @@
+let link_web="http://localhost/doan2/";
 var _id_sp="";
+function select_img(id,item) {
+    var fileInput = document.getElementById(id);
+    var filePath = fileInput.value; //lấy giá trị input theo id
+    var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i; //các tập tin cho phép
+    //Kiểm tra định dạng
+    if (!allowedExtensions.exec(filePath)) {
+        alert('Vui lòng thêm các icon có định dạng: .jpeg/.jpg/.png/.gif only.');
+        fileInput.value = '';
+        return false;
+    } else {
+        //Image preview
+        if (fileInput.files && fileInput.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById(item).innerHTML = '<img style="width:100%;height:120px;" src="' + e.target.result + '"/>';
+            };
+            reader.readAsDataURL(fileInput.files[0]);
+
+            // $('#'+info).html((fileInput.files[0].length > 1) ? fileInput.files[0].length + ' files' : fileInput.files[0].name)
+        }
+    }
+
+}
 function show_sanpham()
 {
     $.ajax({
@@ -13,10 +37,12 @@ function show_sanpham()
         },
         success: function(response) {
             let output=""; 
+           
             $.each(response, function(k, item) {
                 output += `
                 <tr>
                     <td>${k+1}</td>
+                    <td><img style="width:100%;height:120px;" src="${link_web+item.img_sp}"/></td>
                     <td>${item.masanpham}</td>
                     <td>${item.tensanpham}</td>
                     <td>${item.gia}</td>
@@ -35,17 +61,22 @@ function show_sanpham()
 }
 
 function themsanpham(){
+    var formData = new FormData();
+    formData.append("loaiquanly", "create");
+    formData.append("masanpham", $("#masanpham").val());
+    formData.append("tensanpham", $("#tensanpham").val());
+    formData.append("gia", $("#gia").val());
+    formData.append("chat_lieu", $("#chat_lieu").val());
+
+    var hinh_sanpham = $('#hinh_sanpham').prop('files')[0]??"";  // lay img ra tu file id
+    formData.append("hinh_sanpham",hinh_sanpham); // truyen img vao formdata
     $.ajax({
         url: "../PHP/sp_controller.php",
         type: 'POST',
-        data: {
-            loaiquanly:"create",
-            masanpham:$("#masanpham").val(),
-            tensanpham:$("#tensanpham").val(),
-            gia:$("#gia").val(),
-            chat_lieu:$("#chat_lieu").val()
-        },
-        dataType: 'json',
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
         headers: {
         "Authorization": "Basic "
         },

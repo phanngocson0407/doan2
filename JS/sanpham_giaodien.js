@@ -1,3 +1,4 @@
+let link_web="http://localhost/doan2/";
 function show_sanpham()
 {
     $.ajax({
@@ -18,8 +19,7 @@ function show_sanpham()
                 <div class="product-item" >
                   <div class="product-top">
                     <a href="" class="product-thumb">
-                      <img class="img-fist" src="../PICTURE/KL5228.jpg" alt="" />
-                      <img src="../PICTURE/kl5228-1.jpg" alt="" class="img-after" />
+                      <img height="50px" width="100%" class="img-fist" src="${link_web+item.img_sp}" />
                     </a>
                     <a href="" class="buynow">XEM NHANH</a>
                   </div>

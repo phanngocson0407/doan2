@@ -105,6 +105,7 @@
                   <thead>
                   <tr>
                     <th>STT</th>
+                    <th>Hinh anh</th>
                     <th>Mã sản phẩm</th>
                     <th>Tên sản phẩm</th>
                     <th>Giá</th>
@@ -174,6 +175,9 @@
             class="margin-top20"
           />
             <br />
+            <input type="file" id="hinh_sanpham" onchange="select_img('hinh_sanpham','noihienhinhanh')">
+            <span id="noihienhinhanh"></span>
+            <br />
             <button type="button" onclick="themsanpham()" class="btn btn-primary">Thêm</button>
             <button type="button" class="btn btn-primary" data-dismiss="modal" id="dong_themsp">Đóng</button>
         </form>
@@ -227,6 +231,8 @@
             id="edit_chat_lieu"
             class="margin-top20"
             />
+            <br />
+           
             <br />
             <button type="button" onclick="suasanpham()" class="btn btn-primary">Cập nhật</button>
             <button type="button" class="btn btn-primary" data-dismiss="modal" id="dong_suasp">Đóng</button>
@@ -285,6 +291,7 @@
 <script src="dist/js/pages/dashboard.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="../JS/sanpham.js?v3"></script>
+
+<script src="../JS/sanpham.js?v5"></script>
 </body>
 </html>
