@@ -49,7 +49,7 @@ switch($loaiquanly)
             $link_hinhmoithem=them_hinhanh("hinh_sanpham","images/sanpham/");
         }
         else{
-            return_err("Điền hinh_sanpham");
+            return_err("Thêm hình vào ");
         }
 
 
@@ -134,13 +134,21 @@ switch($loaiquanly)
         else{
             return_err("Điền chất liệu sản phẩm");
         }
+        if(isset($_FILES['hinh_sanpham']))
+        {
+            $link_hinhmoithem=them_hinhanh("hinh_sanpham","images/sanpham/");
+        }
+        else{
+            return_err("Thêm hình vào ");
+        }
 
         $sql="UPDATE san_pham
             SET
             masanpham='$masanpham',
             tensanpham='$tensanpham',
             gia='$gia',
-            chat_lieu='$chat_lieu'
+            chat_lieu='$chat_lieu',
+            img_sp='$link_hinhmoithem'
             WHERE id = '$id_sp'
         ";
         $arr=[];

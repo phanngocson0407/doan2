@@ -118,12 +118,14 @@ function xoasanpham(id_sp){
 }
 
 
-function hien_thongtin_suasanpham(id_sp,ma,ten,gia,chat_lieu){
+function hien_thongtin_suasanpham(id_sp,ma,ten,gia,chat_lieu,img_sp){
     $("#btn_suasp").click();
     $("#edit_masanpham").val(ma);
     $("#edit_tensanpham").val(ten);
     $("#edit_gia").val(gia);
     $("#edit_chat_lieu").val(chat_lieu);
+    $("#edit_hinh_sanpham").val(img_sp);
+
     _id_sp=id_sp;
 
 }

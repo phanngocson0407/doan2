@@ -105,7 +105,7 @@
                   <thead>
                   <tr>
                     <th>STT</th>
-                    <th>Hinh anh</th>
+                    <th>Hình ảnh</th>
                     <th>Mã sản phẩm</th>
                     <th>Tên sản phẩm</th>
                     <th>Giá</th>
@@ -232,7 +232,8 @@
             class="margin-top20"
             />
             <br />
-           
+            <input type="file" id="edit_hinh_sanpham" onchange="select_img('edit_hinh_sanpham','hienhinhanh')">
+            <span id="hienhinhanh"></span>
             <br />
             <button type="button" onclick="suasanpham()" class="btn btn-primary">Cập nhật</button>
             <button type="button" class="btn btn-primary" data-dismiss="modal" id="dong_suasp">Đóng</button>
